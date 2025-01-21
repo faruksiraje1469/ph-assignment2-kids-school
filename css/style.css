@@ -55,6 +55,7 @@
 }
 
 
+
 /* navbar */
 .navbar{
     justify-content: space-around;
@@ -81,6 +82,10 @@
     text-decoration: none;
     margin-right: 30px;
 }
+.hamburg{
+    display: none;
+}
+
 .btn-primary{
     /* background-color: #FEA301; */
     height: 45px;
@@ -91,6 +96,17 @@
     font-weight: 700;
     font-size: 17px;
     text-align: center;
+}
+.btn-enroll{
+    height: 45px;
+    width: 170px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+
 }
 .marquee{
     margin-top: 20px;
@@ -164,8 +180,35 @@
    
    align-items: center;
 }
+.card-footer{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* arrow style*/
+.arrow h2{
+    color: white;
+    background-color: #FEA301;
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+
+}
+.arrow-title{
+    text-align: center;
+
+}
 
 /* story style */
+.stories-title{
+    font-size: 2.75rem;
+    font-weight:700 ;
+    text-align: center;
+    margin-bottom: -20px;
+}
 .big-card{
     height: 620px;
     width: 530px;
@@ -188,6 +231,20 @@
 .story-container{
     display: grid;
     grid-template-columns: repeat(2,2fr);
+}
+.date-name{
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #01ACFD;
+    height: 2.5rem;
+    width: 200px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+    margin-top: -20px;
+    margin-left:-190px;
 }
 .story-title{
     color: rgb(0, 0, 0);
@@ -221,8 +278,29 @@
     margin-top: 0 auto;
     border-radius: 16px 16px 0px 0px;
 }
+.story-card h4{
+    background-color:rgb(149, 178, 38);
+    height: 2rem;
+    width: 150px;
+    font-size: 13px;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    margin-top: -25px; 
+    margin-left: 40px;
+    position: relative;
+    z-index: 1;
+    
+}
+.clr-blue h4{
+    background-color: rgb(93, 88, 240);
+}
 .story-card-title{
-    place-items: center;
+    padding: 35px;
+    font-size: 15.34px;
+    font-weight: 700;
 }
 .stories, .view-btn{
     display: block;
@@ -248,4 +326,148 @@
     justify-content: space-around;
     align-items: center;
     place-items: center;
+}
+.footer-title{
+    color: white;
+    font-size: 2rem;
+}
+.footer-description{
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 25px;
+}
+.footer-logo{
+    margin-left: 50px;
+}
+.footer-nav{
+    color: white;
+}
+.footer-nav h3{
+    font-size: 24px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.footer-nav li{
+    list-style: none;
+    margin-bottom: 20px;
+    font-size:20px ;
+    font-weight: 400;
+}
+.footer-nav a{
+    text-decoration: none;
+    color: white;
+    
+}
+.footer-brand{
+    color: white;
+    font-size: 23px;
+    margin-top: -40px;
+
+}
+.footer-brand img{
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.copyright{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: -200px;
+}
+
+/* small device */
+@media screen and (max-width: 576px){
+    .navbar,
+    .banner,
+    .stories,
+    .card-section,
+    .footer
+    {
+        flex-direction: column;
+       
+    }
+
+    .banner{
+        display: flex;
+        flex-direction: column-reverse;
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; 
+
+    }
+    .banner-title{
+        font-size: 25px;
+        text-align: center; 
+       
+    }
+    .banner-description{
+        text-align: center;
+        font-size: 14px;
+        width: 370px;
+        height: 54px;
+        margin-bottom: 60px;
+    }
+    .nav-links,
+    .btn-primary,
+    .nav-title,
+    .big-card{
+        display: none;
+
+    }
+    .logo{
+        margin-left: 20px;
+    }
+    .hamburg{
+        display: block;
+        display: flex;
+        justify-content: right;
+        margin-top: -50px;
+        font-size: 40px;
+    }
+   
+    .curriculum-container, .footer{
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .story-container{
+        flex-direction: column;
+        grid-template-columns: repeat(2,2fr);  
+        padding: 20px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .story-card{
+        width: 90%;
+    }
+    .btn-enroll{
+        display: block;
+        margin: 0 auto;
+    }
+    .footer{
+        height: 800px;
+        display: grid;
+        justify-items: start;
+        padding-left: 20px;
+  
+    }
+    .footer-logo{
+        margin: 0;
+        padding: 0;
+        
+        
+        
+    }
+    
+    .footer-nav{
+        margin-top:-120px;
+        
+    }
+   .copyright{
+    margin: 0 auto;
+   }
+    
 }
