@@ -217,8 +217,8 @@ hr{
 /* stories */
 
 .stories{
-     background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);;
-     padding: 100px;
+     
+     /* padding: 100px; */
     
 }
 .stories-title{
@@ -231,10 +231,12 @@ hr{
 }
 .story-card-section{
     gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .big-card{
-    width: 540px;
-    height: 630px;
+    /* width: 540px;
+    height: 630px; */
     border-radius: 16px;
     background: rgb(255, 255, 255);
 }
@@ -412,6 +414,26 @@ hr{
     margin: 0 auto;
 }
 
+.story-bg{
+    background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);;
+}
+
+.btn{
+    padding-bottom: 60px;
+}
+
+.stories img{
+    width: 100%;
+}
+
+.footer-center{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
 
 /* small device */
 @media screen and (max-width: 576px){
@@ -491,6 +513,10 @@ hr{
         justify-content: center;
     }
     /* story */
+
+    .stories{
+        padding: 0;
+    }
     
     
     .story-cards{
@@ -500,6 +526,11 @@ hr{
        
         
         
+    }
+
+    .story-card-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     .story-card{
         width: 100%;
@@ -525,4 +556,23 @@ hr{
         margin-top:-120px;
         
     }
+
+    /* Fixed Code */
+    .story-card{
+        width: calc(100% - 30px);
+        margin: 0 auto;
+    }
+
+    .story-card h4{
+        margin-left: 15px;
+        margin-top: -25px;
+    }
+
+    .story-card-section{
+        grid-template-columns: 1fr;
+    }
+    .story-cards {
+        gap: 0px;
+    }
+
 }
