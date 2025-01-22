@@ -407,6 +407,13 @@ hr{
         height: 54px;
         margin-bottom: 60px;
     }
+    .banner-image{
+        width: 350px;
+        height:720px ;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
     .nav-links,
     .btn-primary,
     .nav-title,
