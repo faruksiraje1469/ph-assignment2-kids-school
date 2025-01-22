@@ -123,13 +123,15 @@ hr{
     
 }
 .banner-title{
-    font-size: 50px;
+    font-size: 54px;
     font-weight: 700;
     margin-bottom: 24px;
+    /* width: 600px; */
 }
 .banner-description{
     font-size: 18px;
     margin-bottom: 24px;
+    /* width: 600px; */
 }
 .banner-image{
     margin-left: 30px;
@@ -193,8 +195,6 @@ hr{
     position: relative;
     align-items: center;
     justify-content: center;
-   
-
 }
 .arrow h2{
     color: white;
@@ -207,9 +207,6 @@ hr{
     text-align: center;
     justify-items: center;
     margin-right: 10px;
-    
-    
-
 }
 
 /* story style */
@@ -229,8 +226,6 @@ hr{
     box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.09);
     border-radius: 16px ;
     background: url(),rgb(255, 255, 255);
-    
-
 }
 .big-card img{
     width: 100%;
@@ -325,7 +320,6 @@ hr{
 }
 .card-section{
     margin-top: 150px;
-
 }
 
 /* footer style */
@@ -368,8 +362,7 @@ hr{
 }
 .footer-nav a{
     text-decoration: none;
-    color: white;
-    
+    color: white; 
 }
 .footer-brand{
     color: white;
@@ -401,17 +394,16 @@ hr{
         display: flex;
         justify-content: center; /* Center horizontally */
         align-items: center; 
-
     }
     .banner-title{
         font-size: 25px;
         text-align: center; 
-       
     }
     .banner-description{
         text-align: center;
         font-size: 14px;
-        width: 370px;
+        font-weight: 500;
+        width: 357px;
         height: 54px;
         margin-bottom: 60px;
     }
@@ -469,10 +461,7 @@ hr{
     }
     .footer-logo{
         margin: 0;
-        padding: 0;
-        
-        
-        
+        padding: 0;  
     }
     
     .footer-nav{
