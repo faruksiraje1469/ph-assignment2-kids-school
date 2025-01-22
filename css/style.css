@@ -409,7 +409,6 @@ hr{
     }
     .banner-image{
         width: 340px;
-        height:720px ;
         display: grid;
         align-items: center;
         justify-content: center;
@@ -436,7 +435,7 @@ hr{
         display: block;
         background-color: #FEA301;
         margin-top: 9px;
-        height: 2px;
+        height: 3px;
     }
    
     .curriculum-container, .footer{
