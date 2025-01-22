@@ -105,9 +105,14 @@
     border-radius: 8px;
     font-weight: 700;
     font-size: 17px;
-    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 
 }
+
 hr{
     color: red;
 }
@@ -209,118 +214,139 @@ hr{
     margin-right: 10px;
 }
 
-/* story style */
+/* stories */
+
+.stories{
+     background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);;
+     padding: 100px;
+    
+}
 .stories-title{
     font-size: 2.75rem;
     font-weight:700 ;
     text-align: center;
-    margin-bottom: -20px;
-}
-.big-card{
-    height: 620px;
-    width: 530px;
-    margin-right: 70px;
-    margin-left: 140px;
-    display: grid;
-    place-items: center;
-    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.09);
-    border-radius: 16px ;
-    background: url(),rgb(255, 255, 255);
-}
-.big-card img{
-    width: 100%;
-    height: 100%;
-    margin-top: 0 auto;
-    border-radius: 16px 16px 0px 0px;
-}
-.story-container{
-    display: grid;
-    grid-template-columns: repeat(2,2fr);
-}
-.date-name{
-    color: white;
-    font-size: 1rem;
-    font-weight: 400;
-    background-color: #01ACFD;
-    height: 2.5rem;
-    width: 200px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; 
-    margin-top: -20px;
-    margin-left:-190px;
-}
-.story-title{
-    color: rgb(0, 0, 0);
-    font-family: Quicksand;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 38.35px;
-    padding: 20px;
-}
-.story-description{
-    color: rgb(102, 102, 102);
-    font-family: Raleway;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 28px;
-    text-align: center;
-    padding: 20px;
-}
-.story-card{
-    height: 300px;
-    width: 280px;
-    margin-bottom: 20px;
-    margin-right: 15px;
-    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.09);
-    border-radius: 16px ;
-    background: url(),rgb(255, 255, 255);
+    /* margin-top: 40px; */
+    margin-bottom: 40px;
 
 }
-.story-card img{
-    width: 100%;
-    margin-top: 0 auto;
-    border-radius: 16px 16px 0px 0px;
+.story-card-section{
+    gap: 20px;
 }
-.story-card h4{
-    background-color:rgb(149, 178, 38);
-    height: 2rem;
-    width: 150px;
-    font-size: 13px;
-    color: white;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;
-    margin-top: -25px; 
+.big-card{
+    width: 540px;
+    height: 630px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+.big-card img{
+    border-radius: 16px 16px 0px 0px;
+
+}
+.big-card-h4{
+    background-color: aqua;
+    width: 174px;
+    height: 40px;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: -30px;
     margin-left: 40px;
     position: relative;
     z-index: 1;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+ 
+}
+.big-card-h2{
+    display: flex;
+    justify-content: start; /* Center horizontally */
+    align-items: start;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px;
+}
+.big-card-description{
+    display: flex;
+    justify-content: start; /* Center horizontally */
+    align-items: start;
+    padding: 20px;
+}
+.story-cards{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    gap: 20px;
+}
+.story-card{
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+.story-card img{
+    border-radius: 16px 16px 0px 0px;
+}
+.story-card-h4{
+    background-color: aqua;
+    width: 150px;
+    height: 35px;
+    font-size: 14px;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: -30px;
+    margin-left: 40px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+
+}
+.story-card-green{
+    background-color:rgb(93, 88, 240);;
+    width: 150px;
+    height: 35px;
+    font-size: 14px;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: -30px;
+    margin-left: 40px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+
+
+}
+.story-card-description{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    padding: 20px;
+}
+.btn{
+    display: grid;
+    align-items: center;
+    justify-content: center;
     
 }
-.clr-blue h4{
-    background-color: rgb(93, 88, 240);
-}
-.story-card-title{
-    padding: 35px;
-    font-size: 15.34px;
+.btn-view{
+    height: 45px;
+    width: 170px;
+    color: white;
+    border: none;
+    border-radius: 8px;
     font-weight: 700;
+    font-size: 17px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
 }
-.stories, .view-btn{
-    display: block;
-    margin: 0 auto;
-    margin-top: 80px;
-}
-.stories{
-    border: 2px solid white;
-    height: 1000px;
-    width: 100%;
-    background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);;
-}
-.card-section{
-    margin-top: 150px;
-}
+
+
+
+
 
 /* footer style */
 .footer{
@@ -375,13 +401,22 @@ hr{
     margin-top: 20px;
 }
 
+/* fixed code */
+.curriculum,
+.stories,
+.hero-section,
+.header,
+.footer
+{
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
 
 /* small device */
 @media screen and (max-width: 576px){
     .navbar,
     .banner,
-    .stories,
-    .card-section,
     .footer
     {
         flex-direction: column;
@@ -394,6 +429,7 @@ hr{
         flex-direction: column-reverse;
         justify-content: center; /* Center horizontally */
         align-items: center;  
+        overflow: hidden;
        
     }
     .banner-title{
@@ -440,7 +476,12 @@ hr{
         background-color: #FEA301;
         margin-top: 9px;
         height: 3px;
+        border: none;
     }
+    .btn-enroll{
+        margin-left: 100px;
+    }
+    
    
     .curriculum-container, .footer{
         flex-direction: column;
@@ -449,28 +490,24 @@ hr{
         align-items: center;
         justify-content: center;
     }
-    .stories{
-       width: 100%;
-       margin: 0%;
-    }
+    /* story */
     
-    .story-container{
+    
+    .story-cards{
         flex-direction: column;
-        grid-template-columns: repeat(2,2fr);  
-       margin-left: 15px;
-    }
-    .story-card{
-        width:260px;
+        grid-template-columns: repeat(2,2fr); 
+        /* max-width: 350px; */
        
         
+        
     }
-    .story-card h4{
-        margin-right: 60px;
+    .story-card{
+        width: 100%;
+       
+   
     }
-    .btn-enroll{
-        display: block;
-        margin: 0 auto;
-    }
+   
+   /* footer */
     .footer{
         height: 800px;
         width: 100%;
