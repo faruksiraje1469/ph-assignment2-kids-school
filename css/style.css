@@ -389,11 +389,12 @@ hr{
     }
 
     .banner{
+       
         display: flex;
         flex-direction: column-reverse;
-        display: flex;
         justify-content: center; /* Center horizontally */
-        align-items: center; 
+        align-items: center;  
+       
     }
     .banner-title{
         font-size: 25px;
@@ -407,11 +408,14 @@ hr{
         height: 54px;
         margin-bottom: 60px;
     }
-    .banner-image{
-        width: 340px;
+    .banner-image img{
         display: grid;
         align-items: center;
         justify-content: center;
+        width: 300px;
+       
+       
+       
     }
     .nav-links,
     .btn-primary,
@@ -445,17 +449,23 @@ hr{
         align-items: center;
         justify-content: center;
     }
+    .stories{
+       width: 100%;
+       margin: 0%;
+    }
     
     .story-container{
         flex-direction: column;
         grid-template-columns: repeat(2,2fr);  
-        padding: 20px;
-        display: grid;
-        justify-content: center;
-        align-items: center;
+       margin-left: 15px;
     }
     .story-card{
-        width: 90%;
+        width:260px;
+       
+        
+    }
+    .story-card h4{
+        margin-right: 60px;
     }
     .btn-enroll{
         display: block;
@@ -463,6 +473,7 @@ hr{
     }
     .footer{
         height: 800px;
+        width: 100%;
         display: grid;
         justify-items: start;
         padding-left: 20px;
@@ -477,8 +488,4 @@ hr{
         margin-top:-120px;
         
     }
-   .copyright{
-    margin: 0 auto;
-   }
-    
 }
