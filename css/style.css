@@ -200,6 +200,7 @@ hr{
     position: relative;
     align-items: center;
     justify-content: center;
+
 }
 .arrow h2{
     color: white;
@@ -218,14 +219,14 @@ hr{
 
 .stories{
      
-     /* padding: 100px; */
+     padding: 20px;
     
 }
 .stories-title{
     font-size: 2.75rem;
     font-weight:700 ;
     text-align: center;
-    /* margin-top: 40px; */
+    margin-top: 40px;
     margin-bottom: 40px;
 
 }
