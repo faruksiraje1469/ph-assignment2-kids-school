@@ -435,6 +435,9 @@ hr{
     .curriculum-container, .footer{
         flex-direction: column;
         grid-template-columns: repeat(1, 1fr);
+        display: grid;
+        align-items: center;
+        justify-content: center;
     }
     
     .story-container{
